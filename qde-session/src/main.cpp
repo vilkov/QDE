@@ -1,6 +1,7 @@
+#include "application.h"
 
 
-int main()
+int main(int argc, char **argv)
 {
-	return 0;
+	return Application(argc, argv).exec();
 }

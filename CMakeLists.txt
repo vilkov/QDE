@@ -63,7 +63,6 @@ endif (USE_GPROF)
 # 3rdparty
 find_package (Qt4 4.7.1 COMPONENTS QtCore QtGui QtXml QtDbus REQUIRED)
 include (${QT_USE_FILE})
-set (qde_LIBS ${qde_LIBS} ${QT_LIBRARIES})
 add_definitions (${QT_DEFINITIONS})
 
 
@@ -87,9 +86,11 @@ add_definitions (
 
 
 # QDE core library
+set (qde-core_LIBS ${qde-core_LIBS} ${QT_LIBRARIES})
 add_subdirectory ("qde-core")
 
 
 # QDE session manager
+set (qde-session_LIBS ${qde-session_LIBS} ${QT_LIBRARIES})
 add_subdirectory ("qde-session")
 

@@ -1,5 +1,5 @@
-#ifndef APPLICATION_H_
-#define APPLICATION_H_
+#ifndef QDE_CORE_APPLICATION_H_
+#define QDE_CORE_APPLICATION_H_
 
 #include <QtGui/QApplication>
 #include "../qde_core_ns.h"
@@ -21,4 +21,4 @@ protected:
 
 QDE_CORE_NS_END
 
-#endif /* APPLICATION_H_ */
+#endif /* QDE_CORE_APPLICATION_H_ */

@@ -17,7 +17,7 @@ set (qde-session_SOURCES ${qde-session_SOURCES} ${qde-session_RESOURCES_BIN})
 
 # Target - qde-session
 add_executable (qde-session ${qde-session_SOURCES})
-target_link_libraries (qde-session ${qde-session_LIBS})
+target_link_libraries (qde-session qde-core ${qde-session_LIBS})
 
 # It is because of Qt (qglobal.h)
 set_target_properties (qde-session PROPERTIES COMPILE_FLAGS "-Wno-long-long")
